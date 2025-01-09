@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="d630e685-eacd-4dfd-8ea5-001caa698113" name="dripwrld_db@localhost Mapping">
+      <data-sources db="c1796496-5b50-46c4-9827-7c514fdf466a" />
+      <scope>
+        <node kind="schema" qname="dripwrld_db" />
+      </scope>
+    </mapping>
+  </component>
+</project>
