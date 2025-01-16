@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+  <session-factory>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="connection.url">
+      jdbc:mysql://localhost:3306/dripwrld_db?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;createDatabaseIfNotExist=true
+    </property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">123456</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.show_sql">true</property>
+
+    <mapping class="com.codevibe.web.dripworld.entities.SettingsEntity"/>
+    <mapping class="com.codevibe.web.dripworld.entities.UsersEntity"/>
+    <mapping class="com.codevibe.web.dripworld.entities.CategoriesEntity"/>
+    <mapping class="com.codevibe.web.dripworld.entities.OrderItemsEntity"/>
+    <mapping class="com.codevibe.web.dripworld.entities.OrdersEntity"/>
+    <mapping class="com.codevibe.web.dripworld.entities.AddressEntity"/>
+<!--    <mapping class="com.codevibe.web.dripworld.entities.PaymentsEntity"/>-->
+    <mapping class="com.codevibe.web.dripworld.entities.ProductEntity"/>
+<!--    <mapping class="com.codevibe.web.dripworld.entities.VendorsEntity"/>-->
+    <mapping class="com.codevibe.web.dripworld.entities.CartEntity"/>
+    <mapping class="com.codevibe.web.dripworld.entities.StockEntity"/>
+
+
+  </session-factory>
+</hibernate-configuration>
